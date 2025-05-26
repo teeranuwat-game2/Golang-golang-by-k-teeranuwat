@@ -7,6 +7,10 @@ Welcome to the **Go Bootcamp**! This guide covers essential Go concepts, practic
 link from P'Bond
 Check out [P'Bond's curated Go resources and sample projects on GitHub](https://github.com/codebangkok/golang?tab=readme-ov-file) — a treasure trove for Go learners and enthusiasts!
 
+---
+
+For those seeking to master their Go skills, check out the [Final Assignment: Jade Palace By P'หน่อง](https://github.com/AnuchitO/softcraft-valley/blob/main/Jade-Palace.md#learning-objectives) — a comprehensive challenge to solidify your learning.
+
 ## 📅 Day One
 
 ### Topics Covered
