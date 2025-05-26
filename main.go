@@ -1,8 +1,6 @@
 package main
 
-import (
-	"fmt"
-)
+import "net/http"
 
 type User struct {
 	Name  string
@@ -11,24 +9,21 @@ type User struct {
 }
 
 func main() {
-	fmt.Println(getUsername())
-	_, err := getUser()
-	if err != nil {
-		fmt.Println("Error retrieving user:", err)
-		return
-	}
-	// fmt.Println("User Name:", user)
 
-	// loop
-	numbers := []int{1, 2, 3, 4, 5}
-	for i, num := range numbers {
-		fmt.Printf("Number %d: %d\n", i, num)
-	}
+	http.HandleFunc("/hello", func(w http.ResponseWriter, r *http.Request) {
+		username := getUsername()
+		user, err := getUser()
+		if err != nil {
+			http.Error(w, "User not found", http.StatusNotFound)
+			return
+		}
 
-	for i := 0; i < len(numbers); i++ {
-		fmt.Printf("Number %d: %d\n", i, numbers[i])
-	}
+		w.WriteHeader(http.StatusOK)
+		w.Write([]byte("Hello " + username + "! User: " + user.Name + ", Age: " + string(user.Age)))
+	})
 
+	http.ListenAndServe(":8080", nil)
+	// curl -X GET http://localhost:8080/hello
 }
 
 func getUsername() string {
