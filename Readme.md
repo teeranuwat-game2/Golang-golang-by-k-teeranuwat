@@ -15,7 +15,7 @@ For those seeking to master their Go skills, check out the [Final Assignment: Ja
 
 ### Topics Covered
 
-- **Go Install & Run**: `go install`, `go run`
+- **Go Install & Run**
 - **Syntax & Types**
 - **Basic Go Program Structure**
 - **Printing to Console**
