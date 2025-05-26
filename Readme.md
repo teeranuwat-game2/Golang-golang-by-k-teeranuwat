@@ -4,6 +4,9 @@ Welcome to the **Go Bootcamp**! This guide covers essential Go concepts, practic
 
 ---
 
+link from P'Bond
+Check out [P'Bond's curated Go resources and sample projects on GitHub](https://github.com/codebangkok/golang?tab=readme-ov-file) — a treasure trove for Go learners and enthusiasts!
+
 ## 📅 Day One
 
 ### Topics Covered
