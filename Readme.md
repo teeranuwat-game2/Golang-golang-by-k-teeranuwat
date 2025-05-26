@@ -1,4 +1,4 @@
-# Go Bootcamp
+# Go Bootcamp By Teeranuwat
 
 Welcome to the **Go Bootcamp**! This guide covers essential Go concepts, practical assignments, and advanced topics to help you become proficient in Go development.
 
