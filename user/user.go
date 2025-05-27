@@ -11,6 +11,5 @@ func NewUser(getUser getUsername) *User {
 }
 
 func (u *User) GetUsername(id string) string {
-	u.getUser.GetUsername(id)
 	return u.getUser.GetUsername(id)
 }

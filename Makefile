@@ -14,3 +14,9 @@ run:
 
 mod-tidy:
 	go mod tidy
+
+mockgen:
+	go get -u github.com/golang/mock/mockgen
+
+gen mock:
+	mockgen -source=./internal/handler/handler.go -destination=./internal/handler/mock_handler.go -package=handler

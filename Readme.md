@@ -56,9 +56,9 @@ For those seeking to master their Go skills, check out the [Final Assignment: Ja
 
 ### Topics Covered
 - **Introduction to Gin Framework**
-- **Unit Testing**
-- **Hexagonal Architecture**
-- **Interfaces & Implementations**
+- **Unit Testing** gomock ควร cover ใน จำนวน case client ใช้จริงๆ 
+- **Hexagonal Architecture** Port Adapter
+- **Interfaces & Implementations** 
 
 
 #### Assignment I: Gin REST API
