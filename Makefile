@@ -12,3 +12,5 @@ go-env:
 run:
 	go run main.go
 
+mod-tidy:
+	go mod tidy
