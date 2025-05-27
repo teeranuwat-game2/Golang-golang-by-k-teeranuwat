@@ -22,7 +22,6 @@ For those seeking to master their Go skills, check out the [Final Assignment: Ja
 - **Functions in Go**
 - **Packages**
 - **Building a Basic REST API (Native Libraries)**
-- **Introduction to Gin Framework**
 
 ---
 
@@ -51,7 +50,18 @@ For those seeking to master their Go skills, check out the [Final Assignment: Ja
 - Add basic error handling and return appropriate HTTP status codes.
 - Test your endpoints using `curl` or Postman.
 
-#### Assignment IV: Gin REST API
+--- 
+
+## 📅 Day Two
+
+### Topics Covered
+- **Introduction to Gin Framework**
+- **Unit Testing**
+- **Hexagonal Architecture**
+- **Interfaces & Implementations**
+
+
+#### Assignment I: Gin REST API
 
 - Create a simple REST API using the Gin framework.
 - Implement at least two endpoints (e.g., `GET /hello`, `POST /echo`).
@@ -59,17 +69,20 @@ For those seeking to master their Go skills, check out the [Final Assignment: Ja
 - Add basic error handling and return appropriate HTTP status codes.
 - Test your endpoints using `curl` or Postman.
 
----
+#### Assignment II: Gin Handler Registration
 
-## 📅 Day Two
+- Refactor your Gin REST API by creating a `handler.go` file.
+- Move all handler functions (e.g., for `/hello`, `/echo`) into `handler.go`.
+- In your main application file, import and register these handlers with the Gin router.
+- Ensure your project structure is modular and handlers are easy to maintain.
+- Test your endpoints to confirm correct handler registration and functionality.
 
-### Topics Covered
 
+
+
+ถ้าทันก็เกริ่นๆ พูดไป
 - **Database & Redis Connections**
 - **Logging with Slog**
-- **Hexagonal Architecture**
-- **Interfaces & Implementations**
-- **Unit Testing**
 
 ---
 
