@@ -1,17 +1,22 @@
 package fizzbuzz
 
-func FizzBuzz(n int) {
+import "strconv"
+
+func FizzBuzz(n int) []string {
+	result := make([]string, n)
 	for i := 1; i <= n; i++ {
 		if i%3 == 0 && i%5 == 0 {
-			println("FizzBuzz")
+			result[i-1] = "FizzBuzz"
 		} else if i%3 == 0 {
-			println("Fizz")
+			result[i-1] = "Fizz"
 		} else if i%5 == 0 {
-			println("Buzz")
+			result[i-1] = "Buzz"
 		} else {
-			println(i)
+			s := strconv.Itoa(i)
+			result[i-1] = string(s)
 		}
 	}
+	return result
 }
 
 func FizzBuzzSlice(numbers []int) {
