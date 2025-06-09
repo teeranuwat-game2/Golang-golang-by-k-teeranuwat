@@ -83,11 +83,13 @@ For those seeking to master their Go skills, check out the [Final Assignment: Ja
 ### Topics Covered
 
 - **Recap Unit test**
-- **Database & Redis Connections**
+- **Database**
+- **query เบื้องต้น**
 - **sqlc**
 - **Logging with Slog**
 
 ถ้าเวลาเหลือ
+- **Redis Connections**
 - **Templates พี่ยอด**
 - **Coding Conventions**
 - **sqlmock**
