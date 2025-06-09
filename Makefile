@@ -20,3 +20,5 @@ mockgen:
 
 gen mock:
 	mockgen -source=./internal/handler/handler.go -destination=./internal/handler/mock_handler.go -package=handler
+sqlc:
+	go install github.com/sqlc-dev/sqlc/cmd/sqlc@latest

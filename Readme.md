@@ -58,8 +58,7 @@ For those seeking to master their Go skills, check out the [Final Assignment: Ja
 - **Introduction to Gin Framework**
 - **Unit Testing** gomock ควร cover ใน จำนวน case client ใช้จริงๆ 
 - **Hexagonal Architecture** Port Adapter
-- **Interfaces & Implementations** 
-
+- **Interfaces & Implementations**
 
 #### Assignment I: Gin REST API
 
@@ -77,24 +76,37 @@ For those seeking to master their Go skills, check out the [Final Assignment: Ja
 - Ensure your project structure is modular and handlers are easy to maintain.
 - Test your endpoints to confirm correct handler registration and functionality.
 
-
-
-
-ถ้าทันก็เกริ่นๆ พูดไป
-- **Database & Redis Connections**
-- **Logging with Slog**
-
 ---
 
 ## 📅 Day Three
 
 ### Topics Covered
 
-- **Templates**
+- **Recap Unit test**
+- **Database & Redis Connections**
+- **sqlc**
+- **Logging with Slog**
+
+ถ้าเวลาเหลือ
+- **Templates พี่ยอด**
 - **Coding Conventions**
+- **sqlmock**
+
+
+ถ้าทันก็เกริ่นๆ พูดไป
+
 - **Kafka Connection**
 - **Consumer & Producer Patterns**
 
 ---
 
 Happy Coding! 🚀
+
+---
+
+## 🎁 Bonus Learning Resources
+
+- [Official Go Documentation](https://go.dev/)
+- [Go by Example](https://gobyexample.com/)
+
+Explore these resources to deepen your understanding of Go and practice with real-world examples!
