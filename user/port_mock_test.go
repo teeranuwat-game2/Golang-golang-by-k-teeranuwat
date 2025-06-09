@@ -10,6 +10,8 @@
 package user
 
 import (
+	context "context"
+	postgresdb "dayone/gensql/postgresdb"
 	reflect "reflect"
 
 	gomock "go.uber.org/mock/gomock"
@@ -51,4 +53,43 @@ func (m *MockgetUsername) GetUsername(id string) string {
 func (mr *MockgetUsernameMockRecorder) GetUsername(id any) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetUsername", reflect.TypeOf((*MockgetUsername)(nil).GetUsername), id)
+}
+
+// MockdbGetter is a mock of dbGetter interface.
+type MockdbGetter struct {
+	ctrl     *gomock.Controller
+	recorder *MockdbGetterMockRecorder
+	isgomock struct{}
+}
+
+// MockdbGetterMockRecorder is the mock recorder for MockdbGetter.
+type MockdbGetterMockRecorder struct {
+	mock *MockdbGetter
+}
+
+// NewMockdbGetter creates a new mock instance.
+func NewMockdbGetter(ctrl *gomock.Controller) *MockdbGetter {
+	mock := &MockdbGetter{ctrl: ctrl}
+	mock.recorder = &MockdbGetterMockRecorder{mock}
+	return mock
+}
+
+// EXPECT returns an object that allows the caller to indicate expected use.
+func (m *MockdbGetter) EXPECT() *MockdbGetterMockRecorder {
+	return m.recorder
+}
+
+// GetAuthor mocks base method.
+func (m *MockdbGetter) GetAuthor(ctx context.Context, id int64) (postgresdb.Author, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetAuthor", ctx, id)
+	ret0, _ := ret[0].(postgresdb.Author)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetAuthor indicates an expected call of GetAuthor.
+func (mr *MockdbGetterMockRecorder) GetAuthor(ctx, id any) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAuthor", reflect.TypeOf((*MockdbGetter)(nil).GetAuthor), ctx, id)
 }

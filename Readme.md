@@ -86,6 +86,7 @@ For those seeking to master their Go skills, check out the [Final Assignment: Ja
 - **Database**
 - **query เบื้องต้น**
 - **sqlc**
+- ***sqlmock**
 - **Logging with Slog**
 
 ถ้าเวลาเหลือ
@@ -112,3 +113,6 @@ Happy Coding! 🚀
 - [Go by Example](https://gobyexample.com/)
 
 Explore these resources to deepen your understanding of Go and practice with real-world examples!
+
+
+Note : Database HW Postgres
